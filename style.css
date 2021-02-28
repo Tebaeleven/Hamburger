@@ -1,0 +1,53 @@
+* {
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+#container{
+   background-color: tomato;
+   display: inline-block;
+   border-radius: 500px;
+   margin: 10% 37%;
+   position: relative;/* 有無どちらでもいい？ */
+   padding: 50px;
+   cursor: pointer;
+}
+.circle{
+   
+   position: relative;
+   
+   width: 100px;
+   height: 100px;
+}
+
+.bar{
+   position: absolute;
+   height: 12px;
+   width: 100%;
+   background: white;
+   border-radius: 8px;
+   transition: ease 0.3s;
+}
+.top{
+   top:18% ;
+}
+.middle{
+   top:48%;
+}
+.bottom{
+   top: 78%;
+}
+
+.close .top{
+   transform: rotate(45deg);
+   top: 48%; 
+}
+
+.close .middle{
+   opacity: 0;
+}
+.close .bottom{
+   transform: rotate(-45deg);
+   top: 48%;
+}
